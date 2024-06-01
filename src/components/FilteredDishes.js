@@ -99,6 +99,7 @@ function FilteredDishes() {
         className={item.strCategory === activeDish ? "active" : ""}
         onClick={() => {
           showFilteredDishesHandler(item.strCategory);
+          setCurrentPage(1)
         }}
       >
         {item.strCategory}
